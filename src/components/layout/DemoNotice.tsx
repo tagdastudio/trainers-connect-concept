@@ -30,14 +30,16 @@ export function Watermark() {
       target="_blank"
       rel="noreferrer"
       aria-label="Mockup by Tagda Studio — open tagda.studio"
-      className="group fixed bottom-4 left-4 z-[76] hidden items-center gap-2.5 rounded-full border border-cream/20 bg-forest/92 py-1.5 pl-1.5 pr-3 text-cream shadow-[0_12px_40px_-16px_rgba(0,0,0,0.7)] backdrop-blur-md transition-colors duration-500 hover:border-gold/60 hover:bg-forest sm:inline-flex"
+      className="group fixed bottom-4 left-4 z-[76] hidden h-10 items-center overflow-hidden rounded-full border border-cream/20 bg-forest/92 p-1 text-cream shadow-[0_12px_40px_-16px_rgba(0,0,0,0.7)] backdrop-blur-md transition-colors duration-500 hover:border-gold/60 hover:pr-3 hover:bg-forest sm:flex"
     >
-      <span className="grid size-7 place-items-center rounded-full bg-gold text-[0.62rem] font-bold tracking-[-0.04em] text-forest">TS</span>
-      <span className="flex flex-col leading-none">
-        <span className="text-[0.42rem] uppercase tracking-[0.18em] text-cream/55">Mockup by</span>
-        <span className="mt-0.5 text-[0.68rem] font-semibold tracking-[-0.01em]">tagda.studio</span>
+      <span className="grid size-8 shrink-0 place-items-center rounded-full bg-gold text-[0.62rem] font-bold tracking-[-0.04em] text-forest">TS</span>
+      <span className="max-w-0 overflow-hidden opacity-0 transition-all duration-500 ease-[var(--ease-expo)] group-hover:max-w-[9rem] group-hover:opacity-100 group-focus-visible:max-w-[9rem] group-focus-visible:opacity-100">
+        <span className="flex flex-col pl-2.5 leading-none">
+          <span className="text-[0.42rem] uppercase tracking-[0.18em] text-cream/55">Mockup by</span>
+          <span className="mt-0.5 text-[0.68rem] font-semibold tracking-[-0.01em]">tagda.studio</span>
+        </span>
       </span>
-      <ArrowUpRight className="size-3 text-cream/50 transition-all duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-gold" />
+      <ArrowUpRight className="ml-1 hidden size-3 shrink-0 text-cream/50 group-hover:block group-hover:text-gold" />
     </a>
   );
 }

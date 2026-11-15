@@ -11,7 +11,7 @@ import { TrainerRail } from "@/components/home/TrainerRail";
 import { SITE_URL, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `${site.tagline} — ${site.name}`,
+  title: `Trainers Connect — concept rebuild by Tagda Studio`,
   description: site.description,
   alternates: { canonical: "/" },
 };
