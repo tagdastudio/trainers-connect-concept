@@ -92,7 +92,6 @@ export function JoinForm() {
                 placeholder="Select a domain"
                 options={domainOptions}
                 buttonClassName="form-line"
-                ariaLabel="Primary training domain"
               />
             </Field>
             <Field label="Years of experience" id="join-years">
@@ -104,7 +103,6 @@ export function JoinForm() {
                 placeholder="Select"
                 options={["Less than 1 year", "1–3 years", "4–7 years", "8–15 years", "More than 15 years"]}
                 buttonClassName="form-line"
-                ariaLabel="Years of experience"
               />
             </Field>
             <div className="sm:col-span-2">

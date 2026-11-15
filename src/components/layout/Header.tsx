@@ -46,7 +46,7 @@ export function Header() {
         }`}
       >
         <div className="gutter grid h-[4.5rem] grid-cols-[1fr_auto] items-center gap-6 lg:h-[5rem] lg:grid-cols-12">
-          <Link href="/" className="flex items-center text-[1.18rem] leading-none lg:col-span-3" aria-label={`${site.name} — home`}>
+          <Link href="/" className="flex items-center text-[1.18rem] leading-none lg:col-span-3">
             <Wordmark />
           </Link>
 
@@ -136,7 +136,7 @@ export function Header() {
                     className="group flex items-baseline gap-4 py-3.5"
                     onClick={() => setOpen(false)}
                   >
-                    <span className="label w-6 text-[0.58rem] text-cream/40">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="label w-6 text-[0.58rem] text-cream/60">{String(i + 1).padStart(2, "0")}</span>
                     <span className="font-display text-[clamp(1.7rem,8vw,2.6rem)] leading-none tracking-[-0.03em] transition-transform duration-500 group-hover:translate-x-1.5 group-hover:text-gold">
                       {item.label}
                     </span>

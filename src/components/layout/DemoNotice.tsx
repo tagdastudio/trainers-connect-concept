@@ -29,14 +29,12 @@ export function Watermark() {
       href="https://tagda.studio"
       target="_blank"
       rel="noreferrer"
-      aria-label="Mockup by Tagda Studio — open tagda.studio"
       className="group fixed right-1 top-1/2 z-[76] hidden -translate-y-1/2 flex-col items-center gap-2 rounded-full border border-cream/20 bg-forest/92 px-1.5 py-3 text-cream shadow-[0_12px_40px_-16px_rgba(0,0,0,0.7)] backdrop-blur-md transition-colors duration-500 hover:border-gold/60 hover:bg-forest sm:flex"
     >
-      <span className="grid size-7 place-items-center rounded-full bg-gold text-[0.55rem] font-bold tracking-[-0.04em] text-forest">TS</span>
       <span className="[writing-mode:vertical-rl] rotate-180 text-[0.46rem] uppercase tracking-[0.18em] text-cream/65">
         Mockup · tagda.studio
       </span>
-      <ArrowUpRight className="size-3 rotate-45 text-cream/45 transition-colors duration-500 group-hover:text-gold" />
+      <ArrowUpRight className="size-3 rotate-45 text-cream/60 transition-colors duration-500 group-hover:text-gold" />
     </a>
   );
 }

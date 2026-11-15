@@ -190,7 +190,6 @@ export function HomeHero() {
               placeholder="Any expertise"
               options={disciplines.map((d) => ({ value: d.name, label: d.name }))}
               buttonClassName="text-[0.95rem] font-medium"
-              ariaLabel="Expertise"
             />
           </HeroField>
           <HeroField label="For">
@@ -199,7 +198,6 @@ export function HomeHero() {
               placeholder="Any audience"
               options={AUDIENCES.map((a) => ({ value: a, label: a }))}
               buttonClassName="text-[0.95rem] font-medium"
-              ariaLabel="Audience"
             />
           </HeroField>
           <HeroField label="In">
@@ -208,7 +206,6 @@ export function HomeHero() {
               placeholder="Anywhere in India"
               options={CITIES.map((c) => ({ value: c, label: c }))}
               buttonClassName="text-[0.95rem] font-medium"
-              ariaLabel="City"
             />
           </HeroField>
           <button

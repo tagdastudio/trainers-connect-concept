@@ -40,12 +40,12 @@ export function CtaBand() {
         </div>
 
         <div className="flex items-end justify-between gap-6 lg:col-span-4 lg:justify-end">
-          <div className="label flex flex-col gap-1.5 text-cream/45">
+          <div className="label flex flex-col gap-1.5 text-cream/60">
             <span className="text-gold">Free to search</span>
             <span>No commission on fees</span>
             <span>Pan-India network</span>
           </div>
-          <Seal className="size-28 shrink-0 text-cream/50 sm:size-36" text="CONNECTING EXPERTISE WITH OPPORTUNITY ·" />
+          <Seal className="size-28 shrink-0 text-cream/65 sm:size-36" text="CONNECTING EXPERTISE WITH OPPORTUNITY ·" />
         </div>
       </div>
     </section>

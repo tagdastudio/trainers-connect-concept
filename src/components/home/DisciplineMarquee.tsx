@@ -7,7 +7,7 @@ export function DisciplineMarquee() {
   return (
     <section aria-label="Training disciplines" className="relative overflow-hidden border-y border-forest bg-forest py-4 text-cream">
       <div className="marquee flex items-center">
-        <span className="label hidden shrink-0 border-r border-cream/15 px-6 text-[0.6rem] text-cream/50 lg:block">
+        <span className="label hidden shrink-0 border-r border-cream/15 px-6 text-[0.6rem] text-cream/65 lg:block">
           The disciplines
         </span>
         <div className="min-w-0 flex-1 overflow-hidden">

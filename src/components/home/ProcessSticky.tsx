@@ -79,9 +79,7 @@ export function ProcessSticky() {
               <li
                 key={step.index}
                 data-step
-                className={`grid grid-cols-[3rem_1fr] gap-4 border-b border-ink/15 py-7 transition-opacity duration-700 sm:grid-cols-[4.5rem_1fr] sm:gap-6 lg:py-9 ${
-                  i === active ? "opacity-100" : "opacity-40"
-                }`}
+                className="grid grid-cols-[3rem_1fr] gap-4 border-b border-ink/15 py-7 sm:grid-cols-[4.5rem_1fr] sm:gap-6 lg:py-9"
               >
                 <span className={`label pt-1 text-[0.6rem] transition-colors duration-500 ${i === active ? "text-accent" : "text-muted"}`}>
                   {step.index}

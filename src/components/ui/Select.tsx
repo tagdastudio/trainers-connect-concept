@@ -122,7 +122,7 @@ export function Select({
         onClick={() => setOpen((v) => !v)}
         className={`group flex w-full items-center justify-between gap-3 text-left ${buttonClassName}`}
       >
-        <span className={selected ? "text-ink" : "text-muted/80"}>{selected?.label ?? placeholder}</span>
+        <span className={selected ? "text-ink" : "text-muted"}>{selected?.label ?? placeholder}</span>
         <svg
           viewBox="0 0 16 16"
           fill="none"

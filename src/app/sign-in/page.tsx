@@ -25,22 +25,22 @@ export default function SignInPage() {
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-forest/70 via-forest/85 to-forest" />
         <div className="flex items-center justify-between">
-          <span className="label text-cream/45">Member access</span>
-          <span className="label text-cream/45">{site.address.city} · IST</span>
+          <span className="label text-cream/60">Member access</span>
+          <span className="label text-cream/60">{site.address.city} · IST</span>
         </div>
         <div>
           <p className="max-w-md font-display text-[clamp(2.2rem,3.6vw,3.6rem)] leading-[1.02] tracking-[-0.04em]">
             The right expertise is closer than you think. <em className="italic text-gold">So is yours.</em>
           </p>
           <div className="mt-10 flex items-center gap-5">
-            <Seal className="size-24 text-cream/45" />
-            <p className="max-w-[16rem] text-[0.78rem] leading-relaxed text-cream/50">
+            <Seal className="size-24 text-cream/60" />
+            <p className="max-w-[16rem] text-[0.78rem] leading-relaxed text-cream/65">
               One profile. One network. A more direct route between expertise and opportunity.
             </p>
           </div>
         </div>
         <div className="flex items-center justify-between border-t border-cream/15 pt-4">
-          <Link href="/" className="label text-cream/50 hover:text-cream">← Back to {site.name}</Link>
+          <Link href="/" className="label text-cream/65 hover:text-cream">← Back to {site.name}</Link>
           <Link href="/trainers-directory" className="group inline-flex items-center gap-2 text-[0.78rem] font-semibold text-cream">
             Browse the network <Arrow className="size-3.5 transition-transform duration-500 group-hover:translate-x-1" />
           </Link>

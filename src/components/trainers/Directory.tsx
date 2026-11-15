@@ -108,7 +108,6 @@ export function Directory() {
               placeholder="Any city"
               options={cities}
               buttonClassName="border-b border-ink/25 py-2 text-[0.82rem]"
-              ariaLabel="Filter by city"
             />
           </FilterGroup>
 
@@ -119,7 +118,6 @@ export function Directory() {
               placeholder="Any audience"
               options={audienceOptions}
               buttonClassName="border-b border-ink/25 py-2 text-[0.82rem]"
-              ariaLabel="Filter by audience"
             />
           </FilterGroup>
 
@@ -167,6 +165,7 @@ export function Directory() {
         </aside>
 
         <div>
+          <h2 className="sr-only">Trainer search results</h2>
           <div className="flex flex-wrap items-center justify-between gap-3 border-b border-ink/15 pb-3">
             <span className="label text-muted">
               Showing <span className="text-ink">{filtered.length}</span> of {trainers.length} profiles

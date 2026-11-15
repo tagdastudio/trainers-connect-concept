@@ -190,7 +190,7 @@ export default function AboutPage() {
         <div className="gutter grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <span className="label flex items-center gap-3 text-gold">
-              <span className="text-[0.58rem] text-cream/35">04</span>
+              <span className="text-[0.58rem] text-cream/60">04</span>
               <span className="h-px w-8 bg-gold" />
               For trainers
             </span>
@@ -207,14 +207,14 @@ export default function AboutPage() {
               {trainerSteps.map((s, i) => (
                 <li key={s} className="group flex items-center justify-between gap-4 border-b border-cream/15 py-4">
                   <span className="flex items-center gap-4">
-                    <span className="label w-6 text-[0.56rem] text-cream/35">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="label w-6 text-[0.56rem] text-cream/60">{String(i + 1).padStart(2, "0")}</span>
                     <span className="font-display text-[1.2rem] tracking-[-0.02em] sm:text-[1.4rem]">{s}</span>
                   </span>
                   <ArrowUpRight className="size-4 text-cream/30 transition-all duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-gold" />
                 </li>
               ))}
             </ol>
-            <p className="mt-5 text-[0.8rem] leading-relaxed text-cream/45">
+            <p className="mt-5 text-[0.8rem] leading-relaxed text-cream/60">
               Membership is annual. No commission is charged on your professional training fees.
             </p>
           </div>

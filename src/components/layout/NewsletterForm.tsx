@@ -23,7 +23,7 @@ export function NewsletterForm() {
         required
         placeholder={done ? "Thank you — we'll be in touch." : "Your email address"}
         disabled={done}
-        className="w-full bg-transparent py-2 text-[0.92rem] text-cream placeholder:text-cream/45 focus:outline-none"
+        className="w-full bg-transparent py-2 text-[0.92rem] text-cream placeholder:text-cream/60 focus:outline-none"
       />
       <button
         type="submit"
@@ -37,5 +37,5 @@ export function NewsletterForm() {
 }
 
 export function FooterNewsletterNote() {
-  return <span className="label text-cream/40">Occasional notes, no noise. {site.shortName} Journal.</span>;
+  return <span className="label text-cream/60">Occasional notes, no noise. {site.shortName} Journal.</span>;
 }

@@ -35,7 +35,7 @@ export function SplitPaths() {
           <ol className="mt-8 grid gap-0 border-t border-cream/15">
             {trainerSteps.map((step, i) => (
               <li key={step} className="flex items-center gap-4 border-b border-cream/15 py-3">
-                <span className="label w-6 text-[0.56rem] text-cream/35">{String(i + 1).padStart(2, "0")}</span>
+                <span className="label w-6 text-[0.56rem] text-cream/60">{String(i + 1).padStart(2, "0")}</span>
                 <span className="text-[0.92rem] text-cream/85">{step}</span>
               </li>
             ))}

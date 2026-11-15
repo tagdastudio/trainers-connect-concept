@@ -17,7 +17,7 @@ export function PageHeader({ index, eyebrow, title, intro, meta, children, tone 
     <section className={`relative overflow-hidden border-b ${forest ? "border-cream/15 bg-forest text-cream" : "border-ink/15"}`}>
       {forest ? <div className="pointer-events-none absolute inset-0 dot-grid opacity-20" aria-hidden="true" /> : null}
       <div className="gutter relative pb-12 pt-10 lg:pb-16 lg:pt-14">
-        <nav aria-label="Breadcrumb" className={`flex items-center gap-2 text-[0.62rem] uppercase tracking-[0.12em] ${forest ? "text-cream/40" : "text-muted"}`}>
+        <nav aria-label="Breadcrumb" className={`flex items-center gap-2 text-[0.62rem] uppercase tracking-[0.12em] ${forest ? "text-cream/60" : "text-muted"}`}>
           <Link href="/" className="ink-link">
             Home
           </Link>
@@ -28,7 +28,7 @@ export function PageHeader({ index, eyebrow, title, intro, meta, children, tone 
         <div className="mt-8 grid gap-8 lg:grid-cols-12 lg:gap-6">
           <div className="lg:col-span-8">
             <span className={`label flex items-center gap-3 ${forest ? "text-gold" : "text-accent"}`}>
-              <span className={forest ? "text-cream/35" : "text-muted"}>{index}</span>
+              <span className={forest ? "text-cream/60" : "text-muted"}>{index}</span>
               <span className={`h-px w-8 ${forest ? "bg-gold" : "bg-accent"}`} />
               {eyebrow}
             </span>
@@ -44,7 +44,7 @@ export function PageHeader({ index, eyebrow, title, intro, meta, children, tone 
               </Reveal>
             ) : null}
             {meta?.length ? (
-              <div className={`flex flex-wrap gap-x-5 gap-y-2 border-t pt-4 text-[0.62rem] uppercase tracking-[0.12em] ${forest ? "border-cream/15 text-cream/45" : "border-ink/15 text-muted"}`}>
+              <div className={`flex flex-wrap gap-x-5 gap-y-2 border-t pt-4 text-[0.62rem] uppercase tracking-[0.12em] ${forest ? "border-cream/15 text-cream/60" : "border-ink/15 text-muted"}`}>
                 {meta.map((m) => (
                   <span key={m}>{m}</span>
                 ))}

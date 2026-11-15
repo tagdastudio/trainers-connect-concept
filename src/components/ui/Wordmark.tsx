@@ -1,5 +1,3 @@
-import { site } from "@/lib/site";
-
 /** The network mark: two offset rings joined by a bridge — expertise meeting opportunity. */
 export function NetworkMark({ className = "size-6" }: { className?: string }) {
   return (
@@ -18,9 +16,8 @@ export function Wordmark({ className = "", mark = true }: { className?: string; 
       <span className="inline-flex items-baseline gap-[0.18em] font-display tracking-[-0.04em]">
         <span>Trainers</span>
         <span className="italic text-accent">Connect</span>
-        <sup className="label ml-0.5 hidden align-super text-[0.34em] tracking-[0.1em] text-ink/50 sm:inline">IN</sup>
+        <sup aria-hidden="true" className="label ml-0.5 hidden align-super text-[0.34em] tracking-[0.1em] text-ink/70 sm:inline">IN</sup>
       </span>
-      <span className="sr-only">{site.name}</span>
     </span>
   );
 }

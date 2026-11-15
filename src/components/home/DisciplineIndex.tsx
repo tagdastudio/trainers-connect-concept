@@ -18,7 +18,7 @@ export function DisciplineIndex() {
         <div className="lg:col-span-5">
           <div className="lg:sticky lg:top-28">
             <span className="label flex items-center gap-3 text-gold">
-              <span className="text-[0.58rem] text-cream/40">02</span>
+              <span className="text-[0.58rem] text-cream/60">02</span>
               <span className="h-px w-8 bg-gold" />
               The register
             </span>
@@ -42,7 +42,7 @@ export function DisciplineIndex() {
               <div className="absolute inset-0 bg-gradient-to-t from-forest/75 via-transparent to-transparent" />
               <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5">
                 <div>
-                  <span className="label text-cream/50">{current.index} / 08</span>
+                  <span className="label text-cream/65">{current.index} / 08</span>
                   <p className="mt-1 max-w-[14rem] font-display text-[1.2rem] leading-tight text-cream">{current.blurb}</p>
                 </div>
                 <span className="label text-gold">↗</span>
@@ -50,7 +50,7 @@ export function DisciplineIndex() {
             </div>
 
             <div className="mt-6 flex max-w-[24rem] items-center justify-between gap-4 border-t border-cream/15 pt-3">
-              <span className="label text-cream/40">500+ training topics</span>
+              <span className="label text-cream/60">500+ training topics</span>
               <Link href="/trainers-directory" className="group inline-flex items-center gap-2 text-[0.78rem] font-semibold text-cream">
                 Explore the directory
                 <ArrowUpRight className="size-3.5 transition-transform duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
@@ -71,7 +71,7 @@ export function DisciplineIndex() {
                     i === active ? "sm:pl-3" : ""
                   }`}
                 >
-                  <span className={`label text-[0.58rem] transition-colors duration-500 ${i === active ? "text-gold" : "text-cream/35"}`}>
+                  <span className={`label text-[0.58rem] transition-colors duration-500 ${i === active ? "text-gold" : "text-cream/60"}`}>
                     {d.index}
                   </span>
 
@@ -81,7 +81,7 @@ export function DisciplineIndex() {
                     }`}>
                       {d.name}
                     </span>
-                    <span className="mt-1 block truncate text-[0.72rem] text-cream/45">{d.topics.join(" · ")}</span>
+                    <span className="mt-1 block truncate text-[0.72rem] text-cream/60">{d.topics.join(" · ")}</span>
                   </span>
 
                   <span className="relative hidden size-12 shrink-0 overflow-hidden sm:block">
@@ -97,7 +97,7 @@ export function DisciplineIndex() {
               </li>
             ))}
           </ul>
-          <p className="mt-5 text-[0.72rem] leading-relaxed text-cream/35">
+          <p className="mt-5 text-[0.72rem] leading-relaxed text-cream/60">
             Plus specialised and emerging skills — the network keeps growing.
           </p>
         </div>
