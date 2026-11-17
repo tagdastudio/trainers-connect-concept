@@ -42,6 +42,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   themeColor: "#f4efe4",
   colorScheme: "light",
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -79,8 +80,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           >
             Skip to content
           </a>
-          <DemoNotice />
           <Header />
+          <DemoNotice />
           <main id="main" className="overflow-x-clip">
             {children}
           </main>

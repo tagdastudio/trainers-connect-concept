@@ -19,7 +19,7 @@ export function ScrollProgress() {
   }, []);
 
   return (
-    <div aria-hidden="true" className="pointer-events-none fixed inset-x-0 top-0 z-[90] h-px">
+    <div aria-hidden="true" className="pointer-events-none fixed inset-x-0 top-[env(safe-area-inset-top)] z-[90] h-px">
       <div ref={ref} className="h-full origin-left scale-x-0 bg-accent" />
     </div>
   );

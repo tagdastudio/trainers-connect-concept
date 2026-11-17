@@ -37,12 +37,12 @@ export function Header() {
   return (
     <>
       <header
-        className={`sticky top-0 z-[70] transition-[background-color,box-shadow,color] duration-500 ${
+        className={`sticky top-0 z-[70] bg-paper pt-[env(safe-area-inset-top)] transition-[background-color,box-shadow,color] duration-500 ${
           open
-            ? "max-lg:invisible bg-transparent text-cream shadow-none"
+            ? "max-lg:invisible text-cream shadow-none"
             : scrolled
-              ? "bg-paper/92 text-ink shadow-[0_1px_0_rgba(22,36,28,0.12)] backdrop-blur-md"
-              : "bg-paper/60 text-ink backdrop-blur-sm"
+              ? "text-ink shadow-[0_1px_0_rgba(22,36,28,0.12)]"
+              : "text-ink"
         }`}
       >
         <div className="gutter grid h-[4.5rem] grid-cols-[1fr_auto] items-center gap-6 lg:h-[5rem] lg:grid-cols-12">
@@ -107,7 +107,7 @@ export function Header() {
           open ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
-        <div className="gutter flex h-[4.5rem] shrink-0 items-center justify-between border-b border-cream/12 pt-[env(safe-area-inset-top)]">
+        <div className="gutter flex min-h-[4.5rem] shrink-0 items-center justify-between border-b border-cream/12 pt-[env(safe-area-inset-top)]">
           <Link href="/" onClick={() => setOpen(false)} className="font-display text-[1.2rem] tracking-[-0.04em]">
             Trainers <em className="italic text-gold">Connect</em>
           </Link>
@@ -146,7 +146,7 @@ export function Header() {
             </ul>
           </nav>
 
-          <div className="mt-auto grid gap-6 pb-10 pt-8 sm:grid-cols-2">
+          <div className="mt-auto grid gap-6 pb-[calc(2.5rem+env(safe-area-inset-bottom))] pt-8 sm:grid-cols-2">
             <Link href={CTA.join.href} onClick={() => setOpen(false)} className="inline-flex items-center justify-between gap-3 rounded-full bg-gold px-5 py-4 text-[0.9rem] font-semibold text-forest">
               Join as a trainer <ArrowUpRight className="size-4" />
             </Link>

@@ -9,19 +9,22 @@ function ScrollTriggerSync() {
   return null;
 }
 
-function safeAreaTop() {
-  if (typeof document === "undefined") return 0;
-  const probe = document.createElement("div");
-  probe.style.cssText = "position:fixed;top:0;height:env(safe-area-inset-top,0px);visibility:hidden;pointer-events:none";
-  document.body.append(probe);
-  const height = probe.offsetHeight;
-  probe.remove();
-  return height;
-}
-
 export function SmoothScroll({ children }: { children: React.ReactNode }) {
   const lenisRef = useRef<LenisRef>(null);
-  const [anchorOffset] = useState(() => -(88 + safeAreaTop()));
+  const [anchorOffset, setAnchorOffset] = useState(-96);
+
+  useEffect(() => {
+    const header = document.querySelector("header");
+    const measure = () => setAnchorOffset(-((header?.offsetHeight ?? 88) + 8));
+    measure();
+    const observer = new ResizeObserver(measure);
+    if (header) observer.observe(header);
+    window.addEventListener("resize", measure);
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", measure);
+    };
+  }, []);
 
   useEffect(() => {
     const update = (time: number) => lenisRef.current?.lenis?.raf(time * 1000);

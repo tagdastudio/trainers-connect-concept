@@ -13,6 +13,7 @@ The original site is a useful directory wrapped in a generic listing layout. Thi
 - **Motifs:** arches, hairlines, index numbers, stamps/seals, margin notes, full-bleed editorial photography
 - **Motion:** Lenis smooth scroll, GSAP line reveals, sticky process steps, hover-driven register, custom listboxes, page transitions, scroll progress line
 - **Accessibility:** keyboard-supporting listboxes and accordions, visible focus, reduced-motion fallbacks
+- **iOS:** `viewport-fit=cover` with a solid, safe-area-aware sticky header, so content never shows through the Dynamic Island or status bar
 
 ## Pages
 
